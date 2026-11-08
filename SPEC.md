@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.1
+Version: 1.2
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -14,6 +14,7 @@ Purpose: So any AI (or human) reading this file can create a new post image / in
 5. Run the post-generation audit in Section 12 after generating. One FAIL means NOT READY. Do not present a failed image as finished.
 6. Keep every generation, including rejected ones. Do not overwrite a training essential.
 7. All hex codes in this spec are APPROXIMATE, sampled by eye from the three training images. Use them as a starting palette, not as an exact brand colour. The relationships between colours (which colour is dominant, which is accent, which is background) matter more than the exact hex.
+8. Colour is never one flat hex. Read Section 2.6 first. Every hero colour must be graded in 3 tones: light, base, dark. A flat-colour image fails the audit, even if the layout and text are correct. This rule was added in v1.2 after image-77 (v6, colouring 6/10) came out flat.
 
 ## 1. What this repo is
 
@@ -80,6 +81,75 @@ Repeat the dominant colour in at least 3 places: headline, illustration, and one
 
 Example from image-63: red is in the headline, the logo, the dress, the flowers on the scarf, and the anger mark.
 Example from image-64: green is in the vomit stream, the drops, and the puddle on the floor.
+
+### 2.6 Graded colouring — the core lesson (added v1.2)
+
+This is the lesson from the detailed audit of image-77 (v6, 2026-11-08). The
+layout, text, and mode were mostly right, but the colouring was flat, so the
+image scored only 6/10 for colouring. Do not repeat that mistake.
+
+1. **Never use one flat hex per colour.** Every hero colour must appear in
+   at least 3 tones: a light tone (highlight), a base tone, and a dark tone
+   (fold / shadow). Example: yellow #FFB800 base, #F9B400 light, #E89A00 dark
+   in the folds (image-64). Green #7ED321 base, #A8E63F highlight, #5AAE00
+   shadow (image-64). Red #E30613 base, brighter for the headline, darker
+   for the dress folds (image-63).
+2. **Grade the repetition, not just repeat the hex.** When a colour repeats
+   in 3 places (Section 2.5), use a different tone in each place: headline
+   brighter, dress darker, small detail in the base tone. Repeating the
+   exact same hex everywhere is flat and reads as AI-generated.
+3. **Break a large colour block with a neutral.** A red dress is never one
+   flat red block. Break it with a cream dupatta / scarf with red flowers
+   (image-63), or with darker fold shading. A yellow hoodie is never one
+   flat yellow block. Break it with darker fold shading and a dark neutral
+   (black pants, white shoes).
+4. **Skin is graded, not flat peach.** Warm peach base #F7C39A / #F6C193,
+   with shading under the chin and cheek, pink on the cheek, and a shadow
+   on the nose. Flat peach skin with no shading is a Section 8 AI tell.
+5. **Hair is graded, not a solid cap.** Near-black base, with a little
+   purple / blue sheen for depth, individual strands in a lighter tone,
+   and a darker tone in the bun / shadow. Solid black hair with no sheen
+   is flat.
+6. **Gold is graded, not flat yellow.** Gold trophy / badge / earring:
+   light gold highlight, base gold #F2B705 / #F39C12, dark gold shadow.
+   A flat gold shape with a black star on it reads as a sticker.
+7. **The lavender blob is graded, not flat.** Pale lavender base #E6DFF7,
+   with a slightly darker lavender-grey at the bottom and a soft shadow
+   under the feet in the same family. A flat pale blob with a straight
+   flat bottom edge looks like a stage.
+8. **Line weight varies.** Thick black outlines around the whole figure,
+   thin lines for inner details only (Section 7.3). Do not use one uniform
+   thick weight for everything, and do not use hatching everywhere. In
+   image-63 the line weight varies: thick around the figure, thin inside
+   the hair, dress, and face.
+9. **Banner is textured, not a clean rectangle.** Mode B banner: red brush
+   stroke, rough edge, red bursts at the sides, centre flat for text
+   (image-64). A clean inset rounded rectangle with a black outline looks
+   corporate and flat. Keep the brush texture only on the edge, keep the
+   centre flat for text.
+10. **Anger mark is small and on the hair.** Small, about 1–2% of the
+    image, on the black hair, with a white outline so it does not disappear
+    (image-63 flaw, Section 3.4). Never put it on the forehead on skin
+    (it looks like a bindi), never make it huge and floating far from the
+    hair (it looks like a separate icon), never duplicate it.
+11. **Figures fill the frame.** In image-63 the wife fills the frame,
+    cropped at the waist, face very large. In image-64 the man fills the
+    frame, bent over, large. White is about 60% in Mode A and 45–50% in
+    Mode B, but the figure is large inside that white. Small figures in
+    the centre with empty white on both sides (white 65–70%) look empty
+    and flat, even if the 60-30-10 numbers are close.
+12. **Faces are adult, not a boy.** An adult man has messy hair, light
+    stubble, a defined nose and cheek, and a normal face size (image-64).
+    A round face, small nose, faint moustache, and eyes closed laughing
+    reads as a boy. An angry woman is 3/4 view, wide eyes with white
+    showing, open mouth shouting (image-63), not profile with gritted
+    teeth and squinting eyes.
+13. **Light has one direction, with a soft shadow.** One main light, with
+    a soft shadow on one side of the figures and a soft shadow under the
+    feet. Do not use perfectly even studio light. Do not use a sharp dark
+    grey triangle or a hard geometric shape as a dark corner — that looks
+    like a missing piece. Do not remove the dark corner and leave nothing;
+    even light is also a fail. Use a soft dark corner / gradient only.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
@@ -332,9 +402,10 @@ Mode D is an explicit exception to three rules that hold for Modes A, B, and C:
 - Simple pose, readable in one second. Pointing, bent over, hands on hips, hands on knees — one clear action.
 - Hands clearly separated, simple poses. No hand-on-hand, no overlapping / merged hands, no pointing finger that is too detailed to render.
 - Face: clear expression that matches the emotion and the text. Angry, sick, shocked, happy — one expression only. No fake wide-eyed shock unless the joke needs it, no robot stare, no direct stare at the camera unless the poster is a portrait.
-- Thick black outlines, one line weight, around the whole figure. Thin lines for inner details only.
-- Flat colours with a little shading, not realistic shading. One light direction, soft shadow under the feet, not harsh black hatch shading.
-- Hair: individual strands, messy, not helmet hair. Skin: warm peach, flat, subtle shading under chin / cheek only.
+- Thick black outlines, one line weight, around the whole figure. Thin lines for inner details only. Line weight varies: thick around the figure, thin inside hair, dress, and face (Section 2.6).
+- Flat colours with a little shading, not realistic shading. One light direction, soft shadow under the feet, not harsh black hatch shading. Every hero colour is graded in 3 tones: light, base, dark (Section 2.6). Never one flat hex per colour.
+- Hair: individual strands, messy, not helmet hair. Near-black with a little purple / blue sheen for depth. Skin: warm peach, flat, subtle shading under chin / cheek only, plus pink on the cheek and a shadow on the nose.
+- Face: clear expression that matches the emotion and the text. Angry, sick, shocked, happy — one expression only. An angry woman is 3/4 view, wide eyes with white showing, open mouth shouting (image-63), not profile with gritted teeth. An adult man has messy hair, light stubble, a defined nose and cheek (image-64), not a round boy face with a faint moustache.
 - Clothing: one hero colour for the main garment, one neutral for pants / shoes. Repeat a small pattern (flowers, stripes) in the hero colour, do not add a new colour for the pattern.
 - No background faces. Small background faces become blobs.
 - No floating objects without a shadow. Every object on the ground needs a soft shadow under it.
@@ -342,7 +413,7 @@ Mode D is an explicit exception to three rules that hold for Modes A, B, and C:
 ### 7.4 Background and shadow
 
 - Background is either plain white, or plain white + one pale organic blob (lavender, light grey-blue, light peach). The blob must be low saturation and must not touch the text.
-- Shadow under the feet is soft, grey or lavender-grey, in the same colour family as the background blob. Never use pure black shadow.
+- Shadow under the feet is soft, grey or lavender-grey, in the same colour family as the background blob. Never use pure black shadow. Never use a sharp dark grey triangle or hard geometric shape as a dark corner. Light has one direction, with a soft shadow on one side, not perfectly even studio light and not a sharp shape.
 - No sun rays, no sparkles, no magic effects, unless the idea is fantasy. Keep it real and clean.
 
 ### 7.5 Colour discipline
@@ -350,6 +421,7 @@ Mode D is an explicit exception to three rules that hold for Modes A, B, and C:
 - Maximum 4 saturated colours per image, plus black, white, skin, and grey. Mode A uses 1 saturated colour. Mode B uses 3. Mode C uses up to 5, but only for tier labels, not for the whole illustration.
 - One hero colour, one punchline / accent colour, one background tint. Everything else is neutral.
 - Repeat the hero colour in at least 3 places.
+- Grade the repetition: use a different tone (light / base / dark) in each place, never the exact same hex everywhere (Section 2.6).
 - Do not use neon. Bright is allowed, neon is not. Graded, warm colours are better than flat neon.
 - Warm and cool must balance. If the image is all warm (red + yellow + orange), add one pale cool colour (lavender, light blue-grey) as background. If the image is all cool, add one warm accent (gold, skin).
 
@@ -364,7 +436,7 @@ From the training work in this repo's history, these tells make a cartoon or pos
 - Text garbled, misspelled, extra letters, or a sign that drops a word.
 - Monitor facing the camera, or a monitor on the opposite side from the person using it.
 - Light too even, no hard shadow, no dark corner, no blown highlight.
-- Colours too even, no variation, no muted / non-uniform colour.
+- Colours too even, no variation, no muted / non-uniform colour. One flat hex per colour, no grading in light / base / dark tones (Section 2.6).
 - Floating objects with no ground shadow.
 - Same face repeated across a set.
 
@@ -459,7 +531,10 @@ No garbled text, no misspelled words, no extra text, no watermark, no logo unles
 - [ ] Mode named: A, B, C, or D?
 - [ ] Idea in one sentence?
 - [ ] Emotion in one word (Mode A/B) or tiers in order (Mode C) or metaphor + three reactions (Mode D)?
-- [ ] Dominant / hero colour named with hex?
+- [ ] Dominant / hero colour named with hex, plus its light and dark tones for grading (Section 2.6)?
+- [ ] Anger mark named: small, on the hair, white outline, never on the forehead, never huge and floating?
+- [ ] Banner named: brush edge for Mode B, centre flat for text, never a clean inset rectangle?
+- [ ] Figures named: large, filling the frame, adult faces, not small in the centre and not a boy face?
 - [ ] Exact headline text copied exactly from the user, no paraphrase?
 - [ ] Layout named: title top, illustration below, eye path described?
 - [ ] Background named: plain white or white + one pale blob? (Mode D exception: pale sky + dirt ground scene, black film bars — see Section 6A.6)
@@ -474,6 +549,10 @@ Check the generated image against this list. If any item fails, do not present i
 
 - [ ] Text spelled exactly, no garbled letters, no missing / extra words
 - [ ] One dominant colour is clear, no colour fight
+- [ ] Every hero colour is graded in 3 tones (light / base / dark), no flat one-hex colour (Section 2.6)
+- [ ] Anger mark is small, on the hair, white outline, never on the forehead, never huge and floating
+- [ ] Banner is brush-textured on the edge, centre flat for text, never a clean inset rectangle
+- [ ] Figures are large and fill the frame, adult faces, white is not 65–70% empty
 - [ ] Hero colour repeated in at least 3 places
 - [ ] Hierarchy: headline first, illustration second, secondary text last
 - [ ] Contrast: headline readable, white on red / black on white, grey secondary text readable on mobile
@@ -500,3 +579,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 
 - 1.0 — 2026-11-08 — First version. Written from deep inspection of image-63 (Bengali red quote card, 9/10) and image-64 ("After Hearing the Client's Design Idea", 8.5/10), plus the loot coloring system from game UI. Modes A, B, C defined, prompt templates and audit checklists added.
 - 1.1 — 2026-11-08 — Mode D added. Written from deep inspection of image-65 ("GOOD NEWS. WE CAN NOW DO THE WRONG THING A THOUSAND TIMES FASTER." by Andreas Horn, colouring 9.5/10 for its purpose). Mode D is Editorial Satire: one visual metaphor, muted textured palette, three reactions, 3 text pieces maximum. Section 6A defines it, Section 5 decision table and Section 9 cheat sheet extended, Section 10.4 template added, Section 10.5 negative prompt renumbered (Mode D drops the "no muted grey-brown colours" line). Training essential saved at `training-essentials/image-65-editorial-satire/` with exact image copy (hash-verified) and README.
+- 1.2 — 2026-11-08 — Graded colouring added. Written from the detailed audit of image-77 (v6, colouring 6/10, overall 7.5/10). New Section 2.6: never one flat hex per colour, grade every hero colour in light / base / dark, grade the repetition, break large colour blocks with a neutral, grade skin / hair / gold / lavender, vary line weight, brush banner edge, small anger mark on the hair only, figures fill the frame, adult faces, light with one direction and a soft shadow (no sharp dark triangle, no even studio light). Sections 7.3, 7.4, 7.5, 8, 11, and 12 updated with the same rules. No training image added in v1.2; image-77 is a generation, not a training essential.
