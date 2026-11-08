@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.3
+Version: 1.4
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -19,6 +19,7 @@ Read this first. If you only read one section, read this one.
 8. Figures are LARGE and close, filling the frame. No small figures in the centre with 65–70% empty white.
 9. Text is spelled EXACTLY. Headline first, illustration second, small price badge last, below the feet, about 10%.
 10. Light has one direction, soft shadow under the feet. No even studio light, no sharp dark triangle, no sparkles, no background faces, hands separated with visible fingers.
+11. No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures. See Section 2.8.
 
 ## 0. How to read this spec (for an AI)
 
@@ -207,6 +208,112 @@ body.
 6. **Shoes are neutral, with an ankle.** Shoes are white / black /
    cream, never the hero colour. Feet have an ankle, legs have a knee,
    shoes are normal size, not big and close to the body.
+
+### 2.8 Why it still looks AI-generated — detailed tells (added v1.4)
+
+This is the lesson from v8 / image-79 (2026-11-08), compared in detail
+with image-63 and image-64. Proportions were fixed in v1.3 (tall,
+6–7 heads, cream salwar, black shoes), but the image still looks poor
+and AI-generated. The score is lower than my first v8 audit: overall
+about 7/10, colouring about 6.5/10, proportions 9/10, but faces, hands,
+fabric, and light are 5/10. The tells below are the reason. Check every
+one before you present an image.
+
+1. **Mirror pose, two full bodies.** In v8 both figures stand in the
+   same pose, mirrored: legs wide in a V, one hand on the hip, leaning
+   away from each other, stiff, like a dance pose. In image-63 there is
+   ONE person, close-up, cropped at the waist, no legs, no shoes to get
+   wrong. In image-64 there is ONE person, bent over, one curved body.
+   Never draw two full bodies in a mirror pose. One person is the hero,
+   the other reacts, with a different pose, different leg angle,
+   different arm angle. If you must draw two full bodies, make their
+   poses different, not symmetrical.
+2. **Face in pure profile is wrong.** Wife in v8 is in pure profile:
+   nose is a sharp beak, one eye is huge with a tiny pupil, mouth is a
+   black hole with no teeth or tongue, chin is pointed. In image-63 the
+   wife is in 3/4 view: both eyes visible, nose with shading and a
+   nostril, cheek, chin, mouth open with teeth and tongue, brows sharp
+   and angled. Use 3/4 view, never pure profile for an angry face.
+   Husband in v8 has both eyes closed, mouth open with a flat white
+   strip for teeth, no tongue, stubble is a dotted grey texture, not
+   individual hairs. In image-64 the man has one eye visible, stubble
+   is individual short hairs, nose and cheek are shaded.
+3. **Skin is flat, one peach hex.** In v8 skin is one flat peach, no
+   cheek pink, no chin shadow, no nose shadow, no neck shadow. In
+   image-63 skin is graded in 3 tones: cheek pink, chin shadow, nose
+   shadow, neck shadow. In image-64 skin has the same grading. Grade
+   skin, always: light, base, dark, plus cheek pink and a shadow under
+   the chin.
+4. **Hair is a solid cap.** In v8 hair is a solid black cap with a
+   blue/purple stripe, no individual strands. Wife's bun is a smooth
+   round ball with a white flower icon on it. Husband's hair is spiky
+   triangles. In image-63 hair has individual strands, flyaway hairs,
+   a messy bun with strands, purple sheen is subtle in the strands,
+   not a stripe. In image-64 hair is messy with individual strands.
+   Draw hair as strands, with flyaway hairs, never as a smooth cap.
+5. **Hands are the biggest AI tell.** Husband's left hand on his hip
+   in v8: 4 long thin spider fingers splayed, no knuckles, no thumb,
+   palm flat. Wife's pointing hand: index finger too long, other
+   fingers are a small curled ball, no knuckles. Wife's left hand on
+   her hip: closed fist, fingers hidden, no thumb. In image-63 the
+   pointing hand has an index finger, other fingers curled in a fist
+   WITH knuckles, thumb visible, wrist with a thick gold bangle. In
+   image-64 both hands are on the knees, fingers separated, each
+   finger visible, with knuckles and nails, watch on the left wrist.
+   Rule: every hand must have visible fingers, knuckles, and a thumb,
+   one hand doing ONE thing clearly. Never a closed fist on a hip,
+   never spider fingers, never a hand hidden behind a body.
+6. **Clothes are flat, no fabric.** Yellow shirt in v8 has 3–4 fold
+   lines, no fabric, no wrinkles at the waist, no pocket, no collar
+   detail. Red kurta is flat, with NO floral pattern on the kurta
+   itself (only the dupatta has flowers). Salwar is flat cream with 2
+   lines, no folds at the knees. Trousers are flat dark grey, no
+   pockets, no creases. Shoes are flat ovals: white sneakers with 3
+   lace lines, black shoes with no strap, no heel, no sole. In
+   image-63 the red kurta has a small floral pattern ALL over, the
+   dupatta has large red flowers and is draped in a U with deep folds
+   and shadows. In image-64 the hoodie has a hood, drawstrings with
+   gold tips, ribbed cuffs, folds at the elbows, back, and waist;
+   cargo pants have large pockets, folds at the knees, elastic cuffs;
+   sneakers have laces, a sole, and a shadow. Draw fabric: pattern
+   all over the main garment, folds with shadows, pockets, cuffs,
+   laces, sole.
+7. **Dupatta has no drape.** In v8 the dupatta is a flat cream sash
+   with small flowers, hanging straight down, no drape, no shadow
+   where it meets the kurta, back part is a flat triangle. In image-63
+   the dupatta is draped in a U with deep folds and shadows between
+   the folds. Draw the dupatta draped, with folds and shadows, never
+   as a flat sash.
+8. **Light is even, background is empty.** In v8 light is even, no
+   shadow on the clothes, no shadow under the chin, shadows under the
+   feet are thin grey ovals, same for both, no direction. Background
+   is about 70% empty white, middle gap between the figures is empty
+   white, eye path breaks. In image-64 the lavender blob is a large
+   organic shape BEHIND the man, filling the middle, and the shadow
+   under the feet is lavender-grey, connecting the figure to the
+   ground. In image-63 the face fills the frame, so there is no empty
+   white gap. Rule: fill the middle, connect the figures to the
+   ground with a real shadow / blob / puddle, never leave a white gap
+   between two figures.
+9. **Anger mark is duplicated, in two colours.** In v8 there is one
+   black floating mark top right AND one white/black flower mark on
+   the bun — two different marks, two different colours, looking like
+   two separate icons. In image-63 there is ONE small red mark ON the
+   hair, 1–2%, plus 3 black emphasis lines to the left of the head,
+   clearly separate. One anger mark only, small, red, on the hair,
+   never duplicated, never black, never on the bun as a flower.
+10. **Trophy is clip-art.** In v8 the trophy is small, flat gold, no
+    highlight, no reflection, handles are thin loops, hand holding it
+    has no thumb, arm is a long thin tube with no muscle, no elbow
+    bend. Draw the trophy graded gold with a highlight and a shadow,
+    handles thick, hand with a thumb, arm with an elbow.
+11. **Grading is fake, only a few dark strokes.** In v8 grading is
+    3–4 dark strokes on a flat colour. Yellow is one yellow, red is
+    one red, cream is one cream. In image-64 yellow has a light
+    highlight, base, and dark orange fold; green has light, base, and
+    dark; in image-63 red has light, base, and dark folds. Grade
+    every colour in 3 tones, with a highlight and a shadow, not just
+    a few dark lines.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
@@ -592,6 +699,7 @@ No garbled text, no misspelled words, no extra text, no watermark, no logo unles
 - [ ] Anger mark named: small, on the hair, white outline, never on the forehead, never huge and floating?
 - [ ] Banner named: brush edge for Mode B, centre flat for text, never a clean inset rectangle?
 - [ ] Figures named: large, filling the frame, adult faces, not small in the centre and not a boy face?
+- [ ] No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures (Section 2.8)?
 - [ ] Proportions named: 6–7 heads tall, head 1/6 to 1/7 of total height, legs about 50% of height, head never greater than the body (Section 2.7)?
 - [ ] Pants and shoes named: neutral colour, never the same hero colour as the top (Section 2.7)?
 - [ ] Exact headline text copied exactly from the user, no paraphrase?
@@ -614,6 +722,7 @@ Check the generated image against this list. If any item fails, do not present i
 - [ ] Figures are large and fill the frame, adult faces, white is not 65–70% empty
 - [ ] Proportions are tall: 6–7 heads tall, head 1/6 to 1/7 of total height, legs about 50% of height, head never greater than the body
 - [ ] Pants and shoes are neutral, never the same hero colour as the top
+- [ ] No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures, one anger mark only
 - [ ] Hero colour repeated in at least 3 places
 - [ ] Hierarchy: headline first, illustration second, secondary text last
 - [ ] Contrast: headline readable, white on red / black on white, grey secondary text readable on mobile
@@ -642,3 +751,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.1 — 2026-11-08 — Mode D added. Written from deep inspection of image-65 ("GOOD NEWS. WE CAN NOW DO THE WRONG THING A THOUSAND TIMES FASTER." by Andreas Horn, colouring 9.5/10 for its purpose). Mode D is Editorial Satire: one visual metaphor, muted textured palette, three reactions, 3 text pieces maximum. Section 6A defines it, Section 5 decision table and Section 9 cheat sheet extended, Section 10.4 template added, Section 10.5 negative prompt renumbered (Mode D drops the "no muted grey-brown colours" line). Training essential saved at `training-essentials/image-65-editorial-satire/` with exact image copy (hash-verified) and README.
 - 1.2 — 2026-11-08 — Graded colouring added. Written from the detailed audit of image-77 (v6, colouring 6/10, overall 7.5/10). New Section 2.6: never one flat hex per colour, grade every hero colour in light / base / dark, grade the repetition, break large colour blocks with a neutral, grade skin / hair / gold / lavender, vary line weight, brush banner edge, small anger mark on the hair only, figures fill the frame, adult faces, light with one direction and a soft shadow (no sharp dark triangle, no even studio light). Sections 7.3, 7.4, 7.5, 8, 11, and 12 updated with the same rules. No training image added in v1.2; image-77 is a generation, not a training essential.
 - 1.3 — 2026-11-08 — Proportions, cloth colour, and at-a-glance added. Written from the user's correction on v7: figures are too short, same cloth colour is used, head is greater than the body. New Section 0A At a glance (10 lines, so any AI can create this type of image at a glance) and new Section 2.7 Proportions and cloth colour: head is 1/6 to 1/7 of total height, never 1/3, figures are 6–7 heads tall, legs about 50% of height, pants and shoes are neutral, never the same hero colour as the top, badge is not the same colour as the shirt, shoes are neutral with an ankle. Sections 7.3, 11, and 12 updated. No training image added in v1.3; v7 is a generation, not a training essential.
+- 1.4 — 2026-11-08 — Why it still looks AI-generated added. Written from the detailed gap of v8 / image-79 vs image-63 and image-64, after the user said the image looks poor and AI-generated. My first v8 audit was too generous (9/10); the correct score is about 7/10 overall, colouring about 6.5/10, proportions 9/10, faces/hands/fabric/light 5/10. New Section 2.8: no mirror pose with two full bodies, 3/4 face never pure profile, skin graded in 3 tones, hair as individual strands never a solid cap, hands with visible fingers/knuckles/thumb never spider fingers or a closed fist on a hip, clothes with pattern/folds/pockets/cuffs/laces/sole, dupatta draped with folds, light with a real ground shadow and no empty white gap between figures, one red anger mark only, trophy graded with a thumb and an elbow, grading in 3 tones not just a few dark strokes. Section 0A point 11 and Sections 11 and 12 updated. No training image added in v1.4; image-79 is v8, a generation, not a training essential.
