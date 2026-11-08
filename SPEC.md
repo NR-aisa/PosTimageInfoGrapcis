@@ -1,9 +1,24 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.2
+Version: 1.3
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
+
+## 0A. At a glance — create this type of image in 10 lines
+
+Read this first. If you only read one section, read this one.
+
+1. Name the mode first: A, B, C, or D. Never blend modes.
+2. One hero colour only, graded in 3 tones: light, base, dark. Never one flat hex.
+3. White about 50–60%, hero about 20–30%, accent less than 10%.
+4. Figures are TALL adults, 6–7 heads tall, legs about 50% of total height. Head is 1/6 to 1/7 of total height, NEVER 1/3. Head is never greater than the body.
+5. Main garment is the hero colour. Pants and shoes are NEUTRAL (dark grey / black / white / cream), NEVER the same hero colour as the top.
+6. Skin is graded peach, hair is near-black with a purple/blue sheen, gold is less than 1%.
+7. Banner is a red brush stroke, centre flat for text. Anger mark is small, on the hair only, never on the forehead, never duplicated, never huge.
+8. Figures are LARGE and close, filling the frame. No small figures in the centre with 65–70% empty white.
+9. Text is spelled EXACTLY. Headline first, illustration second, small price badge last, below the feet, about 10%.
+10. Light has one direction, soft shadow under the feet. No even studio light, no sharp dark triangle, no sparkles, no background faces, hands separated with visible fingers.
 
 ## 0. How to read this spec (for an AI)
 
@@ -150,6 +165,48 @@ image scored only 6/10 for colouring. Do not repeat that mistake.
     grey triangle or a hard geometric shape as a dark corner — that looks
     like a missing piece. Do not remove the dark corner and leave nothing;
     even light is also a fail. Use a soft dark corner / gradient only.
+
+### 2.7 Proportions and cloth colour — head, body, and pants (added v1.3)
+
+This is the lesson from v7 (2026-11-08). The colour grading was better,
+but the figures were still wrong. The user said: they are looking too
+short, and why are you using the same cloth colour? And: the head is
+greater than the body. Yes, I understand: the head was too big for the
+body.
+
+1. **Head is never greater than the body.** Head height is 1/6 to 1/7 of
+   total body height for an adult cartoon. In v7 the head was about 1/3
+   of the body, total height only 4–4.5 heads tall. That is a chibi /
+   child proportion, not an adult. Check it before you present an image:
+   count the heads. If the figure is less than 6 heads tall, it is too
+   short. If the head looks bigger than the torso, it is wrong.
+2. **Figures are TALL adults, 6–7 heads tall.** Legs are about 50% of
+   total height, torso about 30%, head about 15%. Arms are long, hands
+   are normal size, not huge. Legs are long, with a knee bend when
+   walking, not short straight legs with big shoes close to the body.
+   In image-64 the man is 6–7 heads tall, long legs, long torso, bent
+   over. In image-63 the wife is cropped at the waist, but her torso
+   and arms are long, not short and round.
+3. **Main garment is the hero colour. Pants and shoes are NEUTRAL.**
+   Never use the same hero colour for the top and the bottom. Example,
+   wrong in v7: wife's kurta red, salwar red, shoes red — all the same
+   bright red, one red block from waist to ankle, no break. Correct:
+   wife's kurta red, salwar cream, shoes black (v5 was correct on this);
+   or salwar dark grey, shoes white. Husband: shirt yellow, trousers
+   dark grey, shoes white (image-64). This is Section 7.3, and it is
+   now a hard rule, not a suggestion.
+4. **The neutral must break the hero colour.** A cream dupatta breaks
+   the red on top, a cream / dark grey salwar breaks the red at the
+   bottom. Without a neutral break at the bottom, the lower half is one
+   flat hero block.
+5. **Badge is not the same colour as the shirt.** The "৳128 COURSE"
+   badge must stand out as a separate price element. Do not make it the
+   exact same yellow as the husband's shirt. Use a different tone, or
+   white with black text, or a graded gold. Same rule as pants: a
+   repeated colour must be graded, never the exact same hex.
+6. **Shoes are neutral, with an ankle.** Shoes are white / black /
+   cream, never the hero colour. Feet have an ankle, legs have a knee,
+   shoes are normal size, not big and close to the body.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
@@ -406,7 +463,7 @@ Mode D is an explicit exception to three rules that hold for Modes A, B, and C:
 - Flat colours with a little shading, not realistic shading. One light direction, soft shadow under the feet, not harsh black hatch shading. Every hero colour is graded in 3 tones: light, base, dark (Section 2.6). Never one flat hex per colour.
 - Hair: individual strands, messy, not helmet hair. Near-black with a little purple / blue sheen for depth. Skin: warm peach, flat, subtle shading under chin / cheek only, plus pink on the cheek and a shadow on the nose.
 - Face: clear expression that matches the emotion and the text. Angry, sick, shocked, happy — one expression only. An angry woman is 3/4 view, wide eyes with white showing, open mouth shouting (image-63), not profile with gritted teeth. An adult man has messy hair, light stubble, a defined nose and cheek (image-64), not a round boy face with a faint moustache.
-- Clothing: one hero colour for the main garment, one neutral for pants / shoes. Repeat a small pattern (flowers, stripes) in the hero colour, do not add a new colour for the pattern.
+- Clothing: one hero colour for the main garment, one neutral for pants / shoes. Repeat a small pattern (flowers, stripes) in the hero colour, do not add a new colour for the pattern. Pants and shoes are NEVER the same hero colour as the top (Section 2.7). Wife: kurta red, salwar cream / dark grey, shoes black / white. Husband: shirt yellow, trousers dark grey, shoes white.
 - No background faces. Small background faces become blobs.
 - No floating objects without a shadow. Every object on the ground needs a soft shadow under it.
 
@@ -535,6 +592,8 @@ No garbled text, no misspelled words, no extra text, no watermark, no logo unles
 - [ ] Anger mark named: small, on the hair, white outline, never on the forehead, never huge and floating?
 - [ ] Banner named: brush edge for Mode B, centre flat for text, never a clean inset rectangle?
 - [ ] Figures named: large, filling the frame, adult faces, not small in the centre and not a boy face?
+- [ ] Proportions named: 6–7 heads tall, head 1/6 to 1/7 of total height, legs about 50% of height, head never greater than the body (Section 2.7)?
+- [ ] Pants and shoes named: neutral colour, never the same hero colour as the top (Section 2.7)?
 - [ ] Exact headline text copied exactly from the user, no paraphrase?
 - [ ] Layout named: title top, illustration below, eye path described?
 - [ ] Background named: plain white or white + one pale blob? (Mode D exception: pale sky + dirt ground scene, black film bars — see Section 6A.6)
@@ -553,6 +612,8 @@ Check the generated image against this list. If any item fails, do not present i
 - [ ] Anger mark is small, on the hair, white outline, never on the forehead, never huge and floating
 - [ ] Banner is brush-textured on the edge, centre flat for text, never a clean inset rectangle
 - [ ] Figures are large and fill the frame, adult faces, white is not 65–70% empty
+- [ ] Proportions are tall: 6–7 heads tall, head 1/6 to 1/7 of total height, legs about 50% of height, head never greater than the body
+- [ ] Pants and shoes are neutral, never the same hero colour as the top
 - [ ] Hero colour repeated in at least 3 places
 - [ ] Hierarchy: headline first, illustration second, secondary text last
 - [ ] Contrast: headline readable, white on red / black on white, grey secondary text readable on mobile
@@ -580,3 +641,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.0 — 2026-11-08 — First version. Written from deep inspection of image-63 (Bengali red quote card, 9/10) and image-64 ("After Hearing the Client's Design Idea", 8.5/10), plus the loot coloring system from game UI. Modes A, B, C defined, prompt templates and audit checklists added.
 - 1.1 — 2026-11-08 — Mode D added. Written from deep inspection of image-65 ("GOOD NEWS. WE CAN NOW DO THE WRONG THING A THOUSAND TIMES FASTER." by Andreas Horn, colouring 9.5/10 for its purpose). Mode D is Editorial Satire: one visual metaphor, muted textured palette, three reactions, 3 text pieces maximum. Section 6A defines it, Section 5 decision table and Section 9 cheat sheet extended, Section 10.4 template added, Section 10.5 negative prompt renumbered (Mode D drops the "no muted grey-brown colours" line). Training essential saved at `training-essentials/image-65-editorial-satire/` with exact image copy (hash-verified) and README.
 - 1.2 — 2026-11-08 — Graded colouring added. Written from the detailed audit of image-77 (v6, colouring 6/10, overall 7.5/10). New Section 2.6: never one flat hex per colour, grade every hero colour in light / base / dark, grade the repetition, break large colour blocks with a neutral, grade skin / hair / gold / lavender, vary line weight, brush banner edge, small anger mark on the hair only, figures fill the frame, adult faces, light with one direction and a soft shadow (no sharp dark triangle, no even studio light). Sections 7.3, 7.4, 7.5, 8, 11, and 12 updated with the same rules. No training image added in v1.2; image-77 is a generation, not a training essential.
+- 1.3 — 2026-11-08 — Proportions, cloth colour, and at-a-glance added. Written from the user's correction on v7: figures are too short, same cloth colour is used, head is greater than the body. New Section 0A At a glance (10 lines, so any AI can create this type of image at a glance) and new Section 2.7 Proportions and cloth colour: head is 1/6 to 1/7 of total height, never 1/3, figures are 6–7 heads tall, legs about 50% of height, pants and shoes are neutral, never the same hero colour as the top, badge is not the same colour as the shirt, shoes are neutral with an ankle. Sections 7.3, 11, and 12 updated. No training image added in v1.3; v7 is a generation, not a training essential.
