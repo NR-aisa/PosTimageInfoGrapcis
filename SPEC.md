@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.5
+Version: 1.6
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -20,7 +20,8 @@ Read this first. If you only read one section, read this one.
 9. Text is spelled EXACTLY. Headline first, illustration second, small price badge last, below the feet, about 10%.
 10. Light has one direction, soft shadow under the feet. No even studio light, no sharp dark triangle, no sparkles, no background faces, hands separated with visible fingers.
 11. No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures. See Section 2.8.
-12. Hands: never a flat open palm facing the camera, fingers splayed like a starfish. Every hand is in profile / side view, doing one job, with knuckles, nails, and a thumb. See Section 2.9.
+12. Hands: never a flat open palm facing the camera, fingers splayed like a starfish. Every hand is in profile / side view, doing one job, with knuckles, nails, and a thumb. If a hand is a problem, make it totally closed, like a boxing fist. See Section 2.9.
+13. Price badge: big and bold, so it captures the brain's attention. Large bold pill, very bold text, thick outline, below the feet, centre. See Section 2.10.
 
 ## 0. How to read this spec (for an AI)
 
@@ -377,6 +378,33 @@ is the proper gap.
 6. **Count the hands.** Exactly 2 hands per person, 4 hands in a
    two-person image, never 3 hands, never an extra hand. Check the
    hand count before you present an image.
+7. **If a hand is a problem, close it totally, like a boxing fist.**
+   User rule, v13 (2026-11-08): make the hand totally closed, like
+   boxing, if you are having a problem with fingers. A closed fist
+   on the hip is safe: fingers curled closed, thumb on top of the
+   curled fingers, knuckles visible, wrist thick with a bangle. No
+   open fingers, no splayed fingers, no spider fingers. Use this
+   instead of an open hand.
+
+### 2.10 Price badge — big and bold, so it captures the brain (added v1.6)
+
+User rule, v13 (2026-11-08): make the course size bold, so it captures
+brain attention.
+
+1. The price badge is not a small 10% pill. It is LARGE and BOLD:
+   about 18–25% of the image width, very bold black text, thick black
+   outline, white background, below the feet, centre.
+2. Text is very bold, so it reads from far, like a headline. The
+   badge must be the third thing the eye sees, after the banner and
+   the figures.
+3. Badge is not the same colour as the shirt. White pill with black
+   text, never yellow on yellow.
+4. Trade-off to watch: if the badge is too big, it overlaps and cuts
+   off their feet. In v13 the badge is bold and captures attention,
+   but it covers the wife's front foot and the husband's left sneaker.
+   Next time, keep the badge large and bold, but move it a little
+   lower, or make the figures a little higher, so their feet stay
+   visible above the badge.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
@@ -818,3 +846,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.3 — 2026-11-08 — Proportions, cloth colour, and at-a-glance added. Written from the user's correction on v7: figures are too short, same cloth colour is used, head is greater than the body. New Section 0A At a glance (10 lines, so any AI can create this type of image at a glance) and new Section 2.7 Proportions and cloth colour: head is 1/6 to 1/7 of total height, never 1/3, figures are 6–7 heads tall, legs about 50% of height, pants and shoes are neutral, never the same hero colour as the top, badge is not the same colour as the shirt, shoes are neutral with an ankle. Sections 7.3, 11, and 12 updated. No training image added in v1.3; v7 is a generation, not a training essential.
 - 1.4 — 2026-11-08 — Why it still looks AI-generated added. Written from the detailed gap of v8 / image-79 vs image-63 and image-64, after the user said the image looks poor and AI-generated. My first v8 audit was too generous (9/10); the correct score is about 7/10 overall, colouring about 6.5/10, proportions 9/10, faces/hands/fabric/light 5/10. New Section 2.8: no mirror pose with two full bodies, 3/4 face never pure profile, skin graded in 3 tones, hair as individual strands never a solid cap, hands with visible fingers/knuckles/thumb never spider fingers or a closed fist on a hip, clothes with pattern/folds/pockets/cuffs/laces/sole, dupatta draped with folds, light with a real ground shadow and no empty white gap between figures, one red anger mark only, trophy graded with a thumb and an elbow, grading in 3 tones not just a few dark strokes. Section 0A point 11 and Sections 11 and 12 updated. No training image added in v1.4; image-79 is v8, a generation, not a training essential.
 - 1.5 — 2026-11-08 — Hands added. Written from the user's crop image-80 of v9: the hands are looking unreal. The wife's left hand is a flat open palm facing the camera, fingers splayed like a starfish, all almost the same length, thin sticks tapering to a point, thumb short and detached at 90 degrees, no knuckles, no joints, no nails, no shading, wrist too thin, hand floating in the air with no job. New Section 2.9 Hands: never a flat open palm facing the camera, hands in profile / side view, one hand one job with a contact point, fingers short and thick in a curve, knuckles and nails on every finger, thumb at 45 degrees with a muscle, wrist thick, skin graded, exactly 5 fingers, exactly 2 hands per person, if a hand cannot be drawn in that pose change the pose. Section 0A point 12 and Sections 11 and 12 updated. No training image added in v1.5; image-80 is a crop of v9, a generation, not a training essential.
+- 1.6 — 2026-11-08 — Closed fist and bold badge added. Written from the user's crop image-82 of v12: make the hand totally closed, like boxing, if you are having a problem with fingers, and make the course size bold so it captures brain attention. New Section 2.9 point 7 (closed boxing fist on the hip) and new Section 2.10 Price badge: large bold pill, about 18–25% of the image width, very bold black text, thick outline, white background, below the feet, centre, not the same colour as the shirt, with the trade-off noted — in v13 the badge is bold but covers the wife's front foot and the husband's left sneaker, so next time keep it large and bold but move it lower so feet stay visible. Section 0A points 12–13 updated. No training image added in v1.6; image-82 is a crop of v12, a generation, not a training essential.
