@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.0
+Version: 1.1
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -13,7 +13,7 @@ Purpose: So any AI (or human) reading this file can create a new post image / in
 4. Run the pre-generation checklist in Section 11 before generating.
 5. Run the post-generation audit in Section 12 after generating. One FAIL means NOT READY. Do not present a failed image as finished.
 6. Keep every generation, including rejected ones. Do not overwrite a training essential.
-7. All hex codes in this spec are APPROXIMATE, sampled by eye from the two training images. Use them as a starting palette, not as an exact brand colour. The relationships between colours (which colour is dominant, which is accent, which is background) matter more than the exact hex.
+7. All hex codes in this spec are APPROXIMATE, sampled by eye from the three training images. Use them as a starting palette, not as an exact brand colour. The relationships between colours (which colour is dominant, which is accent, which is background) matter more than the exact hex.
 
 ## 1. What this repo is
 
@@ -21,12 +21,13 @@ This repo is a training and reference set for social post images and infographic
 
 It is NOT a realistic photo spec. For realistic photos, use a different spec (unretouched skin, grain, imperfect light, no background faces, separated hands). This spec is for illustrated posts where flat colour, thick black outlines, and a limited palette are the style.
 
-The two training essentials in this repo are the ground truth for this style:
+The three training essentials in this repo are the ground truth for this style:
 
 - `training-essentials/image-63-red-quote-card/image-63.png` — Bengali quote card, angry woman, red-dominant.
 - `training-essentials/image-64-client-design-idea/image-64.png` — English cartoon, designer vomiting green, yellow / red / green triad.
+- `training-essentials/image-65-editorial-satire/image-65.png` — Editorial satire by Andreas Horn, AI jet engine on a broken cart, muted palette, three reactions.
 
-Every rule below is derived from inspecting those two images in depth on 2026-11-08.
+Every rule below is derived from inspecting those three images in depth on 2026-11-08.
 
 ## 2. Definitions — read these exactly
 
@@ -55,7 +56,7 @@ Rules for loot coloring:
 
 ### 2.2 Overall coloring concept (the user's phrase)
 
-In this repo, "coloring concept" also means the whole colour discipline of an image: which colour is dominant, which colours support it, how colours repeat, and how colour matches emotion. Sections 3 and 4 define the two proven coloring concepts from the training images. Loot coloring (Section 2.1) is a third concept, for tiered content.
+In this repo, "coloring concept" also means the whole colour discipline of an image: which colour is dominant, which colours support it, how colours repeat, and how colour matches emotion. Sections 3, 4, and 6A define the proven coloring concepts from the training images. Loot coloring (Section 2.1) is a third concept, for tiered content.
 
 ### 2.3 The 60-30-10 rule
 
@@ -183,8 +184,9 @@ Use Mode B for: designer jokes, client jokes, reaction memes, "after hearing X" 
 | One emotion, one quote, one warning | Mode A | One colour = one feeling, no distraction |
 | A joke, a reaction, a shock, a funny story | Mode B | Warm hero + cool balance + punchline colour |
 | Ranked levels, tiers, plans, steps, best-to-worst | Mode C — Loot (Section 6) | Each tier needs its own colour |
+| A serious critique or satire — a broken process, a bad idea made faster, a warning about the wrong thing done well | Mode D — Editorial Satire (Section 6A) | One visual metaphor + muted palette + three reactions, not bright colours |
 | A realistic photo, a person at work, a slide hero | NOT this spec | Use the realistic-image spec instead. Do not mix cartoon flat colour with realistic skin / light. |
-| User did not say | Ask, or pick Mode A | Mode A is the safest default. Never blend A + B + C in one image. |
+| User did not say | Ask, or pick Mode A | Mode A is the safest default. Never blend A + B + C + D in one image. |
 
 Rule: Name the mode first, in the first line of your prompt and in your reply to the user. Example: "Mode B — Warm + Cool Comedy Triad."
 
@@ -214,6 +216,97 @@ Use Mode C only for tiered content. This is the loot system from Section 2.1 app
 - Do not use red for the best tier and gold for a low tier. Red means warning / danger in Mode A, and gold means best in loot. Keep the meaning consistent.
 - Do not use more than 5 tiers in one image. If there are more, group them.
 - Do not make all tiers equally bright. If everything is bright, nothing is Legendary.
+
+## 6A. Mode D — Editorial Satire (image-65, colouring 9.5/10)
+
+Mode D is a new style, different from Modes A, B, and C. It is for a serious
+critique or satire, not for a funny joke (Mode B) and not for one emotion
+(Mode A). The reference is "GOOD NEWS. WE CAN NOW DO THE WRONG THING A
+THOUSAND TIMES FASTER." by Andreas Horn — credit the artist when reusing or
+publishing this reference.
+
+### 6A.1 Reference
+
+`training-essentials/image-65-editorial-satire/image-65.png` — landscape,
+ink and watercolour, not flat cartoon. A huge, shiny, modern jet engine
+labelled "AI" is strapped with rusty straps onto a broken wooden cart
+labelled "BROKEN PROCESS". The cart has square wooden wheels, splintered
+wood, and loose bolts on the dirt ground. The jet fires with blue flame and
+white smoke to the right, but the cart cannot move properly. Three people on
+the left: the boss in the middle (blue suit, red tie, laughing, presenting
+the engine), the colleague on the far left (grey suit, worried, hand on chin),
+the worker at the front (dirty work clothes and a cap, crouching, trying to
+fix the broken wheel, red toolbox and wrench on the dirt).
+
+### 6A.2 Palette (approximate)
+
+Muted and textured, not bright and flat: silver grey engine, brown wood cart,
+beige dirt ground, pale blue sky, grey suits. Almost no bright colour at all.
+Blue suit #2F5D8A (boss — the only person in strong blue), red tie and red
+toolbox #C0392B (tiny accents only, linking boss and worker), blue jet flame
+#3A7BD5 (the only other blue, repeats the boss's suit), black ink outlines,
+white smoke, white speech bubble. Everything else grey, brown, beige.
+
+### 6A.3 Why it works
+
+- **One visual metaphor, not a literal illustration.** Do not draw "AI is
+  fast". Draw a jet engine on a broken cart. One strong metaphor is better
+  than ten details. The picture proves the words: if the process is broken,
+  AI does not fix it, it just makes the same wrong thing faster.
+- **Material contrast tells the story.** Shiny new silver engine vs rough old
+  brown wood, clean blue suit vs dirty work clothes, fast flame vs square
+  wheels that cannot roll.
+- **Restraint in colour.** Colour is used only to direct the eye, not to
+  decorate. Blue marks the seller (boss's suit, repeated in the jet flame);
+  red appears in only two tiny places and links the boss and the worker — the
+  boss is selling, the worker is paying for it.
+- **Three reactions in one frame.** Excited (boss), worried (colleague),
+  exhausted (worker). No extra text is needed to explain who wins and who loses.
+- **Detail dense on the hero object, background simple.** Wood grain, rivets,
+  bolts, hatching on the suits, dirt, stones, smoke — dense on the engine and
+  cart. Background is just pale sky, a few clouds, and dirt ground. Black bars
+  top and bottom frame it like a film still and focus the eye in the middle.
+- **Eye path:** speech bubble first, then the AI engine (biggest, shiniest
+  object), then "BROKEN PROCESS" on the cart below it, then the worker at the
+  bottom, the real victim of the joke. The bubble points down to the boss, so
+  you know who is speaking. The engine points right, with flame and smoke, so
+  you feel speed. The cart is low and heavy, so you feel it cannot move.
+- **Text is only 3 pieces:** the speech bubble (the joke), "AI" on the engine,
+  "BROKEN PROCESS" on the cart. All black, bold, easy to read. The labels are
+  part of the objects, not pasted on top. No extra caption, no logo, no small print.
+- **The flaw is visible.** Square wheels, loose bolts, broken wood, a worker
+  fixing it. The flaw is the joke — do not hide it or make it pretty.
+
+### 6A.4 What NOT to do in Mode D
+
+- Do not brighten the palette "to make it pop". Brightening it breaks the mood.
+- Do not add more people, objects, or text. Three reactions and three text
+  pieces are the whole story.
+- Do not clean up the mess. Dirt, stones, loose bolts, and broken wood make
+  the scene feel real. A tidy version loses the joke.
+- Do not use Mode D for a funny joke post. That is Mode B's job. Mode D is
+  for satire and critique.
+- Do not draw the metaphor literally ("AI is fast" as a fast robot). The
+  metaphor must be one object doing the wrong job on top of a broken object.
+
+### 6A.5 When to use Mode D
+
+Use Mode D for: satire about AI, automation, or a new tool making a bad
+process worse; a warning that speed is not the same as correctness; an
+editorial cartoon for a post about broken processes. Pick ONE metaphor, ONE
+muted palette, TWO tiny accents maximum, THREE reactions, THREE text pieces
+maximum.
+
+### 6A.6 Exceptions — Mode D breaks the universal rules on purpose
+
+Mode D is an explicit exception to three rules that hold for Modes A, B, and C:
+- Section 7.1 (white background): Mode D uses a pale sky + dirt ground scene,
+  not plain white, and black film bars top and bottom.
+- Section 10.5 negative prompt, "no muted grey-brown colours": muted
+  grey, brown, and beige ARE the palette here. When generating Mode D, drop
+  that one line from the negative prompt.
+- Section 11 background check ("plain white or white + one pale blob"): for
+  Mode D the background is the scene itself — pale sky, dirt ground, no clutter.
 
 ## 7. Universal rules for all modes (do not break these)
 
@@ -291,6 +384,10 @@ White #FFFFFF, Yellow #FFB800, Green #7ED321, Red #D9001B, Lavender #E6DFF7, Dar
 
 Grey #9AA0A6, Green #2ECC71, Blue #3498DB, Purple #9B59B6, Gold #F39C12, Red #E74C3C
 
+### Mode D — Editorial Satire (muted, textured) — from image-65
+
+Silver grey #B8BEC4, Brown wood #8A6A45, Beige dirt #D9C9A8, Pale sky #DCE8F0, Blue suit #2F5D8A, Red accent #C0392B, Blue flame #3A7BD5, Black ink #1A1A1A, White #FFFFFF
+
 To make a new Mode A palette, replace Red with the emotion colour from Section 3.5, keep white, black, skin, cream, and gold the same. To make a new Mode B palette, replace Yellow with the new hero colour, replace Green with the new punchline colour, keep red for the banner and lavender for the background, or replace lavender with a pale tint of the hero colour.
 
 ## 10. Prompt templates (copy-paste, fill the [brackets])
@@ -335,7 +432,23 @@ Each tier: label "[tier name]" + icon "[icon name]" + colour "[loot colour]", ne
 Style: clean infographic, professional UI/UX, high contrast, readable on mobile.
 ```
 
-### 10.4 Negative prompt (use for all modes)
+### 10.4 Mode D template
+
+```
+Mode D — Editorial Satire.
+Idea: [one sentence, what is the critique — e.g. a new tool making a broken process faster, not better]
+Metaphor: [one object doing the wrong job] on top of [one broken object] — e.g. a shiny AI jet engine strapped onto a broken wooden cart with square wheels.
+Layout: landscape, speech bubble at top with exact text "[exact joke]", hero metaphor object in the centre, label "[label 1, e.g. AI]" on the new object, label "[label 2, e.g. BROKEN PROCESS]" on the broken object, black film bars top and bottom.
+People: exactly three, each with a different reaction — [excited seller, e.g. boss in blue suit presenting], [worried observer, e.g. colleague in grey suit, hand on chin], [exhausted worker, e.g. crouching, fixing the broken part, red toolbox on the ground].
+Palette: muted and textured — silver grey, brown wood, beige dirt, pale blue sky, grey suits. Blue only for [seller's suit + the new object's flame / power], red only in two tiny places [tie + toolbox]. No bright colours anywhere else.
+Texture: ink and watercolour, wood grain, rivets, bolts, dirt, stones, smoke, hatching on suits. Dense detail on the hero object, simple background: pale sky, a few clouds, dirt ground.
+Text: exactly 3 pieces, all black and bold — the speech bubble, "[label 1]", "[label 2]". Spell them exactly, no extra words, no logo, no caption.
+Flaw: keep the flaw visible — [square wheels / loose bolts / broken wood]. Do not hide it or make it pretty.
+Style: editorial satire cartoon, serious, like an experienced editorial cartoonist made it, not AI-generated.
+Negative prompt for Mode D: same as Section 10.5, BUT drop the "no muted grey-brown colours" line — muted is the palette here.
+```
+
+### 10.5 Negative prompt (use for all modes)
 
 ```
 No garbled text, no misspelled words, no extra text, no watermark, no logo unless the user gave one, no neon colours, no colour fight, no background faces, no merged hands, no extra fingers, no hand-on-hand, no floating objects without shadow, no detailed city background, no glowing bulb in frame, no monitor facing the camera, no robot stare, no perfect even studio light, no sketchy paper background, no muted grey-brown colours.
@@ -343,13 +456,13 @@ No garbled text, no misspelled words, no extra text, no watermark, no logo unles
 
 ## 11. Pre-generation checklist (must pass before generating)
 
-- [ ] Mode named: A, B, or C?
+- [ ] Mode named: A, B, C, or D?
 - [ ] Idea in one sentence?
-- [ ] Emotion in one word (Mode A/B) or tiers in order (Mode C)?
+- [ ] Emotion in one word (Mode A/B) or tiers in order (Mode C) or metaphor + three reactions (Mode D)?
 - [ ] Dominant / hero colour named with hex?
 - [ ] Exact headline text copied exactly from the user, no paraphrase?
 - [ ] Layout named: title top, illustration below, eye path described?
-- [ ] Background named: plain white or white + one pale blob?
+- [ ] Background named: plain white or white + one pale blob? (Mode D exception: pale sky + dirt ground scene, black film bars — see Section 6A.6)
 - [ ] Person described: age, clothes, pose, expression, hands separated?
 - [ ] Accent colour limited to tiny details only?
 - [ ] Negative prompt included?
@@ -370,7 +483,8 @@ Check the generated image against this list. If any item fails, do not present i
 - [ ] Shadow under feet is soft and in the right colour, no floating objects
 - [ ] Light is not perfectly even, one main direction, not studio-perfect
 - [ ] No neon, no watermark, no extra logo, no AI tells from Section 8
-- [ ] Score: would you give it at least 8/10 against image-63 (9/10) and image-64 (8.5/10)? If not, say why, in the user's words, and ask for direction.
+- [ ] Score: would you give it at least 8/10 against image-63 (9/10), image-64 (8.5/10), and image-65 (9.5/10 for its purpose)? If not, say why, in the user's words, and ask for direction.
+- [ ] Mode D only: one metaphor, three reactions, three text pieces maximum, muted palette, flaw visible — if any of these fails, it is not Mode D.
 
 ## 13. Training essentials — index
 
@@ -378,9 +492,11 @@ Check the generated image against this list. If any item fails, do not present i
 |---|---|---|---|
 | `training-essentials/image-63-red-quote-card/image-63.png` | Mode A, single red, emotion = colour, grey for secondary, gold as tiny accent | 9/10 | The low-contrast grey, the red anger mark lost on black hair |
 | `training-essentials/image-64-client-design-idea/image-64.png` | Mode B, yellow hero, green punchline, red banner, lavender cool balance, vertical eye path | 8.5/10 | Yellow exclamation marks blending into the hoodie, red/green placed too close |
+| `training-essentials/image-65-editorial-satire/image-65.png` | Mode D, one visual metaphor (AI jet on broken cart), muted textured palette, three reactions, 3 text pieces max | 9.5/10 for its purpose | Do not brighten the muted palette, do not add people or text, do not clean up the mess — the flaw is the joke |
 
 Each training folder has its own README with a full breakdown. Do not overwrite these files. New generations go in a new folder, never in a training folder.
 
 ## 14. Version history
 
 - 1.0 — 2026-11-08 — First version. Written from deep inspection of image-63 (Bengali red quote card, 9/10) and image-64 ("After Hearing the Client's Design Idea", 8.5/10), plus the loot coloring system from game UI. Modes A, B, C defined, prompt templates and audit checklists added.
+- 1.1 — 2026-11-08 — Mode D added. Written from deep inspection of image-65 ("GOOD NEWS. WE CAN NOW DO THE WRONG THING A THOUSAND TIMES FASTER." by Andreas Horn, colouring 9.5/10 for its purpose). Mode D is Editorial Satire: one visual metaphor, muted textured palette, three reactions, 3 text pieces maximum. Section 6A defines it, Section 5 decision table and Section 9 cheat sheet extended, Section 10.4 template added, Section 10.5 negative prompt renumbered (Mode D drops the "no muted grey-brown colours" line). Training essential saved at `training-essentials/image-65-editorial-satire/` with exact image copy (hash-verified) and README.
