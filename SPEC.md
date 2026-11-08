@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 2.1
+Version: 2.2
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -633,6 +633,25 @@ first image."
    Background colours are present, but they are smaller and
    lower in the hierarchy than the hero figures and the gold
    money. Do not remove the background to fix a person problem.
+
+### 2.15 Remove an unreal leg, do not try to fix its feet (added v2.2)
+
+User rule, 2026-11-08, crop image-92: "remove that unreal leg".
+
+1. In v7 the student's legs / feet under the desk were unreal:
+   white sneakers under the desk looked detached, floating, no
+   shadow, left shoe bigger than right, legs cut by the desk
+   edge, you cannot see how the legs connect to the feet.
+2. Do NOT try to fix those feet with a shadow or a smaller shoe.
+   REMOVE the leg completely. Crop the seated person waist-up,
+   behind the desk, so his lower body is hidden behind the desk,
+   never shown. No legs under the desk, no feet on the floor,
+   no white sneakers peeking out below the desk.
+3. The same rule applies to any seated figure: if the legs
+   cannot be drawn connected, with an ankle, a knee, a shadow,
+   and the same size shoes, hide them behind the desk / table.
+   A missing leg behind a desk is invisible. A wrong leg under
+   a desk is the first thing the eye sees.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
