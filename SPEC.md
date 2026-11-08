@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 2.0
+Version: 2.1
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -595,6 +595,45 @@ you're not following the loot coloring context properly?"
    yellow is graded, green is graded. Flat colour is what makes
    it read as a poor cartoon, not a professional illustration.
 
+### 2.14 Correction — the realistic background was perfect, the person was the problem (added v2.1)
+
+User correction, 2026-11-08, after v6: "nope: The previous
+backgrounds are perfect with coloring just with the would have some
+problem with the person. The other side is okay. Follow this."
+And: "this the provided second image were more perfect than the
+first image."
+
+1. v6 was the wrong direction. The simple white + lavender blob
+   removed the background the user liked. Do NOT do that again
+   for this story.
+2. The previous backgrounds — image-90 (second image, English,
+   student left, mentor right, tall) and image-91 / v2 (first
+   image, Bangla, mentor left, student right) — are perfect with
+   coloring. Follow image-90, it is more perfect than image-91.
+   Image-90 composition: realistic bootcamp office, window left
+   with blinds/daylight, whiteboard with small colourful sticky
+   notes, wall clock, green plant, books, coffee, headphones,
+   other students far in the background on the right, backs to
+   the camera, a small poster on the right wall with a fake
+   influencer, red X over "COURSE", wooden desk with wood grain.
+3. The problem was only the PERSON, not the background.
+   In image-91 / v2: the mentor is short, head large, torso long,
+   legs short/bent, hidden under the desk, only 4-5 heads tall.
+   The student is in pure profile, head twisted ~90°, neck long
+   and thin. In image-90: the mentor is tall, standing, the
+   student is in a natural 3/4 view, looking up. That is the
+   person to copy.
+4. Fix for v7, following image-90: keep the background exactly,
+   keep its coloring, fix only the person — student in a natural
+   3/4 view, not twisted, coin hand with knuckles, keyboard hand
+   separated; mentor fully tall, 6-7 heads, legs long ~50%,
+   feet fully visible, handing the money bag, thumbs up.
+   Loot coloring still applies to the HERO colours only:
+   Yellow, Green, Red, Gold are vivid, graded in 3 tones.
+   Background colours are present, but they are smaller and
+   lower in the hierarchy than the hero figures and the gold
+   money. Do not remove the background to fix a person problem.
+
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
 Use Mode A when: the post has ONE emotion and ONE message. Anger, sadness, love, pride, warning, apology.
@@ -1040,3 +1079,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.8 — 2026-11-08 — Realistic background added. Written after the user said the first skill image was not correct, need more detailing and perfection, think more deep, take time, read the spec, having the same background is not necessary, you can use any type of more realistic background. New Section 2.11 Realistic background: the lavender blob is the default for a simple joke, not a rule for every story; when the story needs context use a real detailed background with 5+ identifiable objects, all in focus, partially cut off, layered, other people far in the background backs to the camera, and use the background to tell the contrast — in skill v2 a small poster on the wall shows a fake influencer with a megaphone, red X over "COURSE", money flowing from a sad student to him, while the hero foreground is a mentor paying a student to learn. Section 0B point 11 updated. Skill v2 file: media-generation-skill-pay-to-learn-bootcamp-v2-0-15ca835f-a082-4fe6-8413-fc344f2c7fc5.webp.
 - 1.9 — 2026-11-08 — Illustration style only added. Written after the user said "you're leaving the animation era please follow spec properly". The English v4 had broken the spec: it came back as a realistic photo, not illustration, the mentor's head was cut off by the banner, and US dollars fell from a ৳ money bag. New Section 2.12 Illustration style only: Mode B is illustration/animation only, thick black outlines, graded colours, never a realistic photo unless the user explicitly asks for a photo; a figure's head must be fully visible below the banner, feet fully visible, and money is one currency only. English v5 illustration file: media-generation-skill-pay-to-learn-bootcamp-v5-0-f0b96926-c7ce-4719-8d5f-748a0b9584b2.webp.
 - 2.0 — 2026-11-08 — Loot-correct simple Mode B added. Written after the user said v5 "looks like poor cartoon you're not following the loot coloring context properly?" and "please take time for deep analysis think like a experienced ui ux desinger". Re-read SPEC v1.9 in full and image-63, image-64, and v5 side by side. New Section 2.13: the job is to stop a scroll in 1 second, squint test, too many heroes is the root cause, loot is a value system not decoration (Common white/grey 60%, Uncommon green learning, Epic yellow mentor, Legendary gold money brightest, Mythic red warning only), eye path is one line top to bottom, cognitive load count the objects (assets 3-4, v5 15+), a realistic background must be desaturated or it must go. v6 fix: simple Mode B, white ~60% + one pale lavender blob, figures large cropped waist-up, desk/laptop/notebook/cup/headphones grey/white/black only, only Yellow/Green/Red/Gold saturated, gold repeated in exactly 3 places. v6 files: Bangla media-generation-skill-pay-to-learn-bootcamp-v6-0-3859284c-2cd7-4991-99ef-051333d00ec4.webp, English media-generation-skill-pay-to-learn-bootcamp-v6-0-05da0a98-f85b-4156-a971-6d398f8b0c0b.webp.
+- 2.1 — 2026-11-08 — Correction, realistic background was perfect. Written after the user rejected v6: "nope: The previous backgrounds are perfect with coloring just with the would have some problem with the person. The other side is okay. Follow this." and "this the provided second image were more perfect than the first image." The second image is image-90, English, student left, mentor right tall, realistic office background. The first image is image-91 / v2, Bangla, mentor short, student in pure profile. New Section 2.14: v6 lavender blob was the wrong direction, do not remove the background the user liked; follow image-90, keep its background and coloring, fix only the person — student natural 3/4, mentor fully tall 6-7 heads, legs long, feet visible. v7 files, following image-90: Bangla media-generation-skill-pay-to-learn-bootcamp-v7-0-c781d227-bc62-490d-a54b-bd490c27c76e.webp, English media-generation-skill-pay-to-learn-bootcamp-v7-0-45caa211-4456-4312-9dfa-ce396d1ae6b5.webp.
