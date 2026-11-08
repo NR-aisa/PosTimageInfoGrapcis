@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.9
+Version: 2.0
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -542,6 +542,59 @@ follow spec properly".
    spill from it, no US dollar bills, no green banknotes, no mixed
    currency.
 
+### 2.13 Loot-correct simple Mode B — the deep UI/UX lesson (added v2.0)
+
+User rule, 2026-11-08: "please take time for deep analysis think
+like a experienced ui ux desinger", after v5 "looks like poor cartoon
+you're not following the loot coloring context properly?"
+
+1. **The job is to stop a scroll in 1 second.** Squint test: at
+   thumbnail size, from far, one idea must survive. Image-63: big
+   red headline + red dress + pointing face. Image-64: big yellow
+   hoodie + green stream. v5 failed the squint test: a brown desk,
+   blue window, whiteboard with 15 coloured squares, 4 background
+   people, 2 plants, books, clock, poster, laptop, coins everywhere.
+   It became a brown-grey mess. Detail is not the job. Clarity is.
+2. **Too many heroes is the root cause.** v5 had four heroes at the
+   same size and saturation: student in green, mentor in yellow,
+   money in gold, office in blue/pink/orange/brown. A good UI has
+   one primary action. A good poster has one hero. Fix by making
+   one hero, the rest dull.
+3. **Loot is a value system, not decoration.** Saturation and
+   brightness rise with value, the same colour always means the same
+   tier. For this story: Common = white / light grey background,
+   dull, 60%. Uncommon = green, learning, the student. Epic =
+   yellow, the mentor paying. Legendary = gold, the money / SKILL,
+   brightest, most saturated, highest value, repeated in exactly
+   3 places: coin in hand, coins spilling from the bag, big SKILL
+   coin. Mythic / red = warning only, for the banner and for a
+   small red X over the fake course, nothing else.
+4. **Eye path is one line, top to bottom.** Banner → yellow mentor
+   → green student → gold money flowing down → SKILL badge.
+   No detour to a whiteboard, no zig-zag. If the eye has 5 stops
+   that all shout, the user scrolls past.
+5. **Cognitive load: count the objects.** Image-63 and image-64
+   have 3-4 objects. v5 had 15+. Detail belongs only on the hero
+   object, like Mode D: dense detail on the engine and cart, simple
+   background. Detail everywhere is detail nowhere.
+6. **A realistic background must be desaturated, or it must go.**
+   Section 2.11 was misapplied in v2-v5: I kept the detail, but I
+   did not keep it muted. I let the background keep its real
+   colours — blue sky, pink notes, green plant, brown wood — all
+   as saturated as Legendary gold. A sticky note must never compete
+   with money. Fix in v6: go back to simple Mode B, white ~60% +
+   ONE pale lavender blob, figures large cropped waist-up, filling
+   the frame, like image-63. Desk, laptop, notebook, cup,
+   headphones are grey / white / black only. No window, no
+   whiteboard, no sticky notes in colour, no plant, no books in
+   colour, no clock, no background students, no background faces.
+   The tiny fake-course poster is pale grey, low saturation, with
+   a small red X only.
+7. **Grading still applies.** Every saturated colour is graded in
+   3 tones light/base/dark, never one flat hex. Gold is graded,
+   yellow is graded, green is graded. Flat colour is what makes
+   it read as a poor cartoon, not a professional illustration.
+
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
 Use Mode A when: the post has ONE emotion and ONE message. Anger, sadness, love, pride, warning, apology.
@@ -986,3 +1039,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.7 — 2026-11-08 — Story to image in one go added. Written after the user approved v13: "this image is ok", and asked to save that image and update the spec so that when he just gives a story, a perfect image like that can be created in one go. New Section 0B Story to image in one go, 13 steps: read the story and find the joke, name the mode first, pick the hero colour from the emotion, pick different cloths, pick different poses not mirrored, tall adults 6–7 heads, 3/4 face, hands in profile or totally closed like a boxing fist, text exact in order with a large bold price badge, one anger mark only, quality/contrast/colour very carefully, check Section 12, save the approved image in final-examples/ with a README and push. Final example saved: final-examples/wife-winning-course-128-taka-v13/, PNG 1984×1280, sha256 d82e471992cd8843dfc79edd7003d533f6ead9528271d3fa26bf3786603ad938.
 - 1.8 — 2026-11-08 — Realistic background added. Written after the user said the first skill image was not correct, need more detailing and perfection, think more deep, take time, read the spec, having the same background is not necessary, you can use any type of more realistic background. New Section 2.11 Realistic background: the lavender blob is the default for a simple joke, not a rule for every story; when the story needs context use a real detailed background with 5+ identifiable objects, all in focus, partially cut off, layered, other people far in the background backs to the camera, and use the background to tell the contrast — in skill v2 a small poster on the wall shows a fake influencer with a megaphone, red X over "COURSE", money flowing from a sad student to him, while the hero foreground is a mentor paying a student to learn. Section 0B point 11 updated. Skill v2 file: media-generation-skill-pay-to-learn-bootcamp-v2-0-15ca835f-a082-4fe6-8413-fc344f2c7fc5.webp.
 - 1.9 — 2026-11-08 — Illustration style only added. Written after the user said "you're leaving the animation era please follow spec properly". The English v4 had broken the spec: it came back as a realistic photo, not illustration, the mentor's head was cut off by the banner, and US dollars fell from a ৳ money bag. New Section 2.12 Illustration style only: Mode B is illustration/animation only, thick black outlines, graded colours, never a realistic photo unless the user explicitly asks for a photo; a figure's head must be fully visible below the banner, feet fully visible, and money is one currency only. English v5 illustration file: media-generation-skill-pay-to-learn-bootcamp-v5-0-f0b96926-c7ce-4719-8d5f-748a0b9584b2.webp.
+- 2.0 — 2026-11-08 — Loot-correct simple Mode B added. Written after the user said v5 "looks like poor cartoon you're not following the loot coloring context properly?" and "please take time for deep analysis think like a experienced ui ux desinger". Re-read SPEC v1.9 in full and image-63, image-64, and v5 side by side. New Section 2.13: the job is to stop a scroll in 1 second, squint test, too many heroes is the root cause, loot is a value system not decoration (Common white/grey 60%, Uncommon green learning, Epic yellow mentor, Legendary gold money brightest, Mythic red warning only), eye path is one line top to bottom, cognitive load count the objects (assets 3-4, v5 15+), a realistic background must be desaturated or it must go. v6 fix: simple Mode B, white ~60% + one pale lavender blob, figures large cropped waist-up, desk/laptop/notebook/cup/headphones grey/white/black only, only Yellow/Green/Red/Gold saturated, gold repeated in exactly 3 places. v6 files: Bangla media-generation-skill-pay-to-learn-bootcamp-v6-0-3859284c-2cd7-4991-99ef-051333d00ec4.webp, English media-generation-skill-pay-to-learn-bootcamp-v6-0-05da0a98-f85b-4156-a971-6d398f8b0c0b.webp.
