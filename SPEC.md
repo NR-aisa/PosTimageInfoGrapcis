@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.6
+Version: 1.7
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -22,6 +22,80 @@ Read this first. If you only read one section, read this one.
 11. No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures. See Section 2.8.
 12. Hands: never a flat open palm facing the camera, fingers splayed like a starfish. Every hand is in profile / side view, doing one job, with knuckles, nails, and a thumb. If a hand is a problem, make it totally closed, like a boxing fist. See Section 2.9.
 13. Price badge: big and bold, so it captures the brain's attention. Large bold pill, very bold text, thick outline, below the feet, centre. See Section 2.10.
+
+## 0B. Story to image in one go — create a perfect photo like v13 from a story alone
+
+This is the recipe the user asked for on 2026-11-08, after approving
+v13: "this image is ok". When the user just gives you a story, follow
+this section, in order, and you can create a perfect image like v13
+in one go, without asking for more details.
+
+1. **Read the story, find the joke.** Who is winning, who is angry,
+   what is the punchline, what is the price / number / name that must
+   be in the image? Write it down in one line. Example: "No one can
+   win against their wife, but a 128 taka course makes you win, husband
+   holds a trophy, wife is furious."
+2. **Name the mode first.** For a funny story with a person and a
+   reaction, use Mode B. For one emotion, one colour, use Mode A. For
+   a ranked / tiered list, use Mode C. For a satire with a broken
+   process, use Mode D. Never blend modes. Say the mode in the first
+   line of your reply and your prompt.
+3. **Pick the hero colour from the emotion.** Anger = red. Happy /
+   winning = yellow. Sick / disgust = green. One hero colour only,
+   graded in 3 tones: light, base, dark. White about 50–60%, hero
+   about 20–30%, accent less than 10%.
+4. **Pick the cloths, different from the last version.** Name the
+   cloth style for each person first, before you generate. Example:
+   wife in a bright red saree with a thin gold border, cream blouse;
+   husband in a yellow long-sleeve shirt with rolled sleeves. Main
+   garment is the hero colour. Pants and shoes are NEUTRAL, never the
+   same hero colour as the top.
+5. **Pick the poses, different, not mirrored.** One person is the hero,
+   the other reacts, with a different pose, different leg angle,
+   different arm angle. Never two full bodies in a mirror pose.
+6. **Figures are TALL adults.** 6–7 heads tall, head 1/6 to 1/7 of
+   total height, never 1/3, head never greater than the body. Legs
+   about 50% of total height. Figures are LARGE, filling the frame,
+   close together, no empty white gap between them.
+7. **Face is 3/4 view, never pure profile.** Both eyes visible, nose
+   with shading and a nostril, cheek, chin, mouth open with teeth and
+   tongue, brows sharp and angled. Skin graded in 3 tones, cheek pink,
+   shadow under the chin. Hair is individual strands, never a solid cap.
+8. **Hands: profile, one job, or totally closed.** Never a flat open
+   palm facing the camera. Every hand is in profile / side view, doing
+   one job, with knuckles, nails, and a thumb. If a hand is a problem,
+   make it totally closed, like a boxing fist, on the hip.
+9. **Text, exact, in order.** Headline first, on a red brush banner,
+   spelled exactly. Illustration second. Price badge last, LARGE and
+   BOLD, very bold text, thick outline, white pill, below the feet,
+   centre, so it captures the brain's attention. Keep the badge large
+   and bold, but move it lower, or make the figures higher, so their
+   feet stay visible above the badge.
+10. **One anger mark only.** Small, 1–2%, red, on the hair, white
+    outline, never on the forehead, never duplicated, never black.
+    Plus 3 black emphasis lines to the left of the head, clearly separate.
+11. **Quality, contrast, colour, very carefully.** Pure white
+    background, vivid saturated colours, thick sharp black outlines,
+    high contrast, high resolution, sharp, detailed texture in every
+    fabric, every hair strand, every fold. No large pale wash, no
+    washed-out colours, no soft lines, no blur. One main light from
+    the left, soft shadow under the feet. A large pale lavender organic
+    blob behind the figures, filling the middle, connecting them to
+    the background.
+12. **Check Section 12 before you present it.** One FAIL = NOT READY.
+    Count the heads, count the hands, count the anger marks, check the
+    text spelling, check the badge size, check the feet are visible.
+13. **Save the approved image.** When the user says "this image is ok",
+    save the PNG at full resolution, 1984×1280 or higher, in
+    `final-examples/<idea>-<version>/` in this repo, with a README
+    naming the mode, the cloths, the text, and the score, and in
+    `~/workspace/your_files/<idea>-final/`. Do not overwrite it.
+    Push the repo.
+
+A perfect example of this recipe is:
+`final-examples/wife-winning-course-128-taka-v13/` — v13, approved
+2026-11-08, Mode B, red saree / yellow long-sleeve shirt, closed
+boxing fist, large bold "৳128 COURSE" badge, 1984×1280.
 
 ## 0. How to read this spec (for an AI)
 
@@ -847,3 +921,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.4 — 2026-11-08 — Why it still looks AI-generated added. Written from the detailed gap of v8 / image-79 vs image-63 and image-64, after the user said the image looks poor and AI-generated. My first v8 audit was too generous (9/10); the correct score is about 7/10 overall, colouring about 6.5/10, proportions 9/10, faces/hands/fabric/light 5/10. New Section 2.8: no mirror pose with two full bodies, 3/4 face never pure profile, skin graded in 3 tones, hair as individual strands never a solid cap, hands with visible fingers/knuckles/thumb never spider fingers or a closed fist on a hip, clothes with pattern/folds/pockets/cuffs/laces/sole, dupatta draped with folds, light with a real ground shadow and no empty white gap between figures, one red anger mark only, trophy graded with a thumb and an elbow, grading in 3 tones not just a few dark strokes. Section 0A point 11 and Sections 11 and 12 updated. No training image added in v1.4; image-79 is v8, a generation, not a training essential.
 - 1.5 — 2026-11-08 — Hands added. Written from the user's crop image-80 of v9: the hands are looking unreal. The wife's left hand is a flat open palm facing the camera, fingers splayed like a starfish, all almost the same length, thin sticks tapering to a point, thumb short and detached at 90 degrees, no knuckles, no joints, no nails, no shading, wrist too thin, hand floating in the air with no job. New Section 2.9 Hands: never a flat open palm facing the camera, hands in profile / side view, one hand one job with a contact point, fingers short and thick in a curve, knuckles and nails on every finger, thumb at 45 degrees with a muscle, wrist thick, skin graded, exactly 5 fingers, exactly 2 hands per person, if a hand cannot be drawn in that pose change the pose. Section 0A point 12 and Sections 11 and 12 updated. No training image added in v1.5; image-80 is a crop of v9, a generation, not a training essential.
 - 1.6 — 2026-11-08 — Closed fist and bold badge added. Written from the user's crop image-82 of v12: make the hand totally closed, like boxing, if you are having a problem with fingers, and make the course size bold so it captures brain attention. New Section 2.9 point 7 (closed boxing fist on the hip) and new Section 2.10 Price badge: large bold pill, about 18–25% of the image width, very bold black text, thick outline, white background, below the feet, centre, not the same colour as the shirt, with the trade-off noted — in v13 the badge is bold but covers the wife's front foot and the husband's left sneaker, so next time keep it large and bold but move it lower so feet stay visible. Section 0A points 12–13 updated. No training image added in v1.6; image-82 is a crop of v12, a generation, not a training essential.
+- 1.7 — 2026-11-08 — Story to image in one go added. Written after the user approved v13: "this image is ok", and asked to save that image and update the spec so that when he just gives a story, a perfect image like that can be created in one go. New Section 0B Story to image in one go, 13 steps: read the story and find the joke, name the mode first, pick the hero colour from the emotion, pick different cloths, pick different poses not mirrored, tall adults 6–7 heads, 3/4 face, hands in profile or totally closed like a boxing fist, text exact in order with a large bold price badge, one anger mark only, quality/contrast/colour very carefully, check Section 12, save the approved image in final-examples/ with a README and push. Final example saved: final-examples/wife-winning-course-128-taka-v13/, PNG 1984×1280, sha256 d82e471992cd8843dfc79edd7003d533f6ead9528271d3fa26bf3786603ad938.
