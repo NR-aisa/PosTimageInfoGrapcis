@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.4
+Version: 1.5
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -20,6 +20,7 @@ Read this first. If you only read one section, read this one.
 9. Text is spelled EXACTLY. Headline first, illustration second, small price badge last, below the feet, about 10%.
 10. Light has one direction, soft shadow under the feet. No even studio light, no sharp dark triangle, no sparkles, no background faces, hands separated with visible fingers.
 11. No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures. See Section 2.8.
+12. Hands: never a flat open palm facing the camera, fingers splayed like a starfish. Every hand is in profile / side view, doing one job, with knuckles, nails, and a thumb. See Section 2.9.
 
 ## 0. How to read this spec (for an AI)
 
@@ -314,6 +315,68 @@ one before you present an image.
     dark; in image-63 red has light, base, and dark folds. Grade
     every colour in 3 tones, with a highlight and a shadow, not just
     a few dark lines.
+
+### 2.9 Hands — why they look unreal (added v1.5)
+
+This is the lesson from v9 / image-80 (2026-11-08). The user cropped
+the wife's left hand and said: the hands are looking unreal. Yes, that
+hand is the worst tell in v9, and I had already named it as "a bit
+long / spread" in my v9 audit, but I did not name it properly. Here
+is the proper gap.
+
+1. **The hand in image-80: flat open palm, facing the camera,
+   fingers splayed like a starfish.** Palm is flat, facing the camera,
+   5 fingers spread in a fan, all almost the same length, middle finger
+   longest but the others are too long, ring and little fingers are thin
+   sticks, index finger is short and bent, thumb is short, detached,
+   sticking out sideways at 90 degrees, with no muscle at the thumb
+   base. No knuckles, no finger joints, no nails, no shading on the
+   palm, no veins, skin is one flat peach, fingers taper to a point,
+   like claws. Wrist is too thin, forearm is a long thin tube, elbow is
+   pointed, hand is too big for the wrist, palm is too wide.
+2. **A hand floating in the air, doing no job, looks pasted on.** In
+   v9 that left hand is open in the air behind her, not touching
+   anything, not holding anything, not resting on a hip or a knee.
+   A hand with no job and no contact point has no reason to be open
+   and flat. In image-63 the pointing hand is doing one job: pointing,
+   with the index finger out and the other fingers curled. In image-64
+   both hands are doing one job: resting on the knees, with the palm
+   hidden and the fingers bent at the knuckle. A hand must always have
+   a job and a contact point.
+3. **Flat palm facing the camera is the hardest hand pose, and it
+   always fails.** Never draw a flat open palm facing the camera, with
+   all 5 fingers splayed. That is the starfish / spider hand. Draw
+   hands in profile / side view, with the palm turned sideways, not
+   flat to the camera.
+4. **What a real hand looks like in the assets.** Image-63, pointing
+   hand: index finger long, other fingers curled into a fist WITH
+   visible knuckles, thumb on top of the curled fingers, wrist thick
+   with a gold bangle, palm turned sideways, fingers are short and
+   thick, nails visible. Image-64, hands on knees: fingers are
+   separated but each finger is thick, bent at the knuckle, resting on
+   a knee, with nails, knuckles, and a wrist with a watch, palm hidden.
+5. **Hand rules, hard, check before you present an image:**
+   - Exactly 5 fingers, never 4, never 6, never a merged finger.
+   - Fingers are short and thick, not long thin sticks. Middle finger
+     is longest, index and ring are shorter, little finger is shortest,
+     in a curve, not in a straight fan.
+   - Every finger has a knuckle joint and a nail. No finger tapers to
+     a point like a claw.
+   - Thumb is at 45 degrees, with a muscle at its base, never at 90
+     degrees, never detached, never hidden.
+   - Wrist is thick, almost as wide as the palm, forearm has a muscle,
+     elbow is not a sharp point.
+   - Skin on the hand is graded: knuckles darker, palm lighter, with
+     a shadow between the fingers, never one flat peach.
+   - One hand, one job: pointing, holding a trophy, resting on a knee,
+     resting on a hip with an OPEN hand and a thumb, holding a saree.
+     Never a hand open in the air with no job.
+   - If you cannot draw a hand in that pose, change the pose: hide the
+     hand behind the body, rest it on a hip, rest it on a knee, hold
+     something. Do not draw a flat open palm.
+6. **Count the hands.** Exactly 2 hands per person, 4 hands in a
+   two-person image, never 3 hands, never an extra hand. Check the
+   hand count before you present an image.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
@@ -699,6 +762,7 @@ No garbled text, no misspelled words, no extra text, no watermark, no logo unles
 - [ ] Anger mark named: small, on the hair, white outline, never on the forehead, never huge and floating?
 - [ ] Banner named: brush edge for Mode B, centre flat for text, never a clean inset rectangle?
 - [ ] Figures named: large, filling the frame, adult faces, not small in the centre and not a boy face?
+- [ ] Hands named: profile / side view, one job, knuckles, nails, thumb, never a flat open palm facing the camera (Section 2.9)?
 - [ ] No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures (Section 2.8)?
 - [ ] Proportions named: 6–7 heads tall, head 1/6 to 1/7 of total height, legs about 50% of height, head never greater than the body (Section 2.7)?
 - [ ] Pants and shoes named: neutral colour, never the same hero colour as the top (Section 2.7)?
@@ -723,6 +787,7 @@ Check the generated image against this list. If any item fails, do not present i
 - [ ] Proportions are tall: 6–7 heads tall, head 1/6 to 1/7 of total height, legs about 50% of height, head never greater than the body
 - [ ] Pants and shoes are neutral, never the same hero colour as the top
 - [ ] No AI tells: no mirror pose, no spider fingers, no closed fist on a hip, no flat skin, no solid-cap hair, no flat clothes, no empty white gap between figures, one anger mark only
+- [ ] Hands are real: profile / side view, one job, knuckles, nails, thumb, exactly 5 fingers, never a flat open palm facing the camera, never a hand floating with no job
 - [ ] Hero colour repeated in at least 3 places
 - [ ] Hierarchy: headline first, illustration second, secondary text last
 - [ ] Contrast: headline readable, white on red / black on white, grey secondary text readable on mobile
@@ -752,3 +817,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.2 — 2026-11-08 — Graded colouring added. Written from the detailed audit of image-77 (v6, colouring 6/10, overall 7.5/10). New Section 2.6: never one flat hex per colour, grade every hero colour in light / base / dark, grade the repetition, break large colour blocks with a neutral, grade skin / hair / gold / lavender, vary line weight, brush banner edge, small anger mark on the hair only, figures fill the frame, adult faces, light with one direction and a soft shadow (no sharp dark triangle, no even studio light). Sections 7.3, 7.4, 7.5, 8, 11, and 12 updated with the same rules. No training image added in v1.2; image-77 is a generation, not a training essential.
 - 1.3 — 2026-11-08 — Proportions, cloth colour, and at-a-glance added. Written from the user's correction on v7: figures are too short, same cloth colour is used, head is greater than the body. New Section 0A At a glance (10 lines, so any AI can create this type of image at a glance) and new Section 2.7 Proportions and cloth colour: head is 1/6 to 1/7 of total height, never 1/3, figures are 6–7 heads tall, legs about 50% of height, pants and shoes are neutral, never the same hero colour as the top, badge is not the same colour as the shirt, shoes are neutral with an ankle. Sections 7.3, 11, and 12 updated. No training image added in v1.3; v7 is a generation, not a training essential.
 - 1.4 — 2026-11-08 — Why it still looks AI-generated added. Written from the detailed gap of v8 / image-79 vs image-63 and image-64, after the user said the image looks poor and AI-generated. My first v8 audit was too generous (9/10); the correct score is about 7/10 overall, colouring about 6.5/10, proportions 9/10, faces/hands/fabric/light 5/10. New Section 2.8: no mirror pose with two full bodies, 3/4 face never pure profile, skin graded in 3 tones, hair as individual strands never a solid cap, hands with visible fingers/knuckles/thumb never spider fingers or a closed fist on a hip, clothes with pattern/folds/pockets/cuffs/laces/sole, dupatta draped with folds, light with a real ground shadow and no empty white gap between figures, one red anger mark only, trophy graded with a thumb and an elbow, grading in 3 tones not just a few dark strokes. Section 0A point 11 and Sections 11 and 12 updated. No training image added in v1.4; image-79 is v8, a generation, not a training essential.
+- 1.5 — 2026-11-08 — Hands added. Written from the user's crop image-80 of v9: the hands are looking unreal. The wife's left hand is a flat open palm facing the camera, fingers splayed like a starfish, all almost the same length, thin sticks tapering to a point, thumb short and detached at 90 degrees, no knuckles, no joints, no nails, no shading, wrist too thin, hand floating in the air with no job. New Section 2.9 Hands: never a flat open palm facing the camera, hands in profile / side view, one hand one job with a contact point, fingers short and thick in a curve, knuckles and nails on every finger, thumb at 45 degrees with a muscle, wrist thick, skin graded, exactly 5 fingers, exactly 2 hands per person, if a hand cannot be drawn in that pose change the pose. Section 0A point 12 and Sections 11 and 12 updated. No training image added in v1.5; image-80 is a crop of v9, a generation, not a training essential.
