@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.8
+Version: 1.9
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -517,6 +517,31 @@ realistic background.
    realistic background when the story is about a place, a job, a
    classroom, or a contrast between two worlds.
 
+### 2.12 Illustration style only — never a realistic photo (added v1.9)
+
+User rule, 2026-11-08: "you're leaving the animation era please
+follow spec properly".
+
+1. Mode B is ILLUSTRATION / ANIMATION STYLE ONLY. Thick black
+   outlines, graded colours, flat bright daylight, like image-63 and
+   image-64. Never a realistic photograph, never photographic skin,
+   photographic hair, or photographic lighting, unless the user
+   explicitly asks for a photo.
+2. The English v4 broke this: it came back as a realistic photo, not
+   illustration, and the mentor's head was cut off by the banner, and
+   US dollars fell from a ৳ money bag. That is a fail on three
+   counts, even though the student was fixed.
+3. Check before you present: is it illustration, or is it a photo?
+   If it looks like a photo, it is NOT READY, regenerate as
+   illustration.
+4. A figure's head must be FULLY VISIBLE below the banner, with
+   clear space above the head. Never cut a head off at the banner,
+   never cut feet off at the bottom edge, if the figure is meant to
+   be fully in frame.
+5. Money is ONE currency only. If the bag has a "৳", only gold coins
+   spill from it, no US dollar bills, no green banknotes, no mixed
+   currency.
+
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
 Use Mode A when: the post has ONE emotion and ONE message. Anger, sadness, love, pride, warning, apology.
@@ -960,3 +985,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.6 — 2026-11-08 — Closed fist and bold badge added. Written from the user's crop image-82 of v12: make the hand totally closed, like boxing, if you are having a problem with fingers, and make the course size bold so it captures brain attention. New Section 2.9 point 7 (closed boxing fist on the hip) and new Section 2.10 Price badge: large bold pill, about 18–25% of the image width, very bold black text, thick outline, white background, below the feet, centre, not the same colour as the shirt, with the trade-off noted — in v13 the badge is bold but covers the wife's front foot and the husband's left sneaker, so next time keep it large and bold but move it lower so feet stay visible. Section 0A points 12–13 updated. No training image added in v1.6; image-82 is a crop of v12, a generation, not a training essential.
 - 1.7 — 2026-11-08 — Story to image in one go added. Written after the user approved v13: "this image is ok", and asked to save that image and update the spec so that when he just gives a story, a perfect image like that can be created in one go. New Section 0B Story to image in one go, 13 steps: read the story and find the joke, name the mode first, pick the hero colour from the emotion, pick different cloths, pick different poses not mirrored, tall adults 6–7 heads, 3/4 face, hands in profile or totally closed like a boxing fist, text exact in order with a large bold price badge, one anger mark only, quality/contrast/colour very carefully, check Section 12, save the approved image in final-examples/ with a README and push. Final example saved: final-examples/wife-winning-course-128-taka-v13/, PNG 1984×1280, sha256 d82e471992cd8843dfc79edd7003d533f6ead9528271d3fa26bf3786603ad938.
 - 1.8 — 2026-11-08 — Realistic background added. Written after the user said the first skill image was not correct, need more detailing and perfection, think more deep, take time, read the spec, having the same background is not necessary, you can use any type of more realistic background. New Section 2.11 Realistic background: the lavender blob is the default for a simple joke, not a rule for every story; when the story needs context use a real detailed background with 5+ identifiable objects, all in focus, partially cut off, layered, other people far in the background backs to the camera, and use the background to tell the contrast — in skill v2 a small poster on the wall shows a fake influencer with a megaphone, red X over "COURSE", money flowing from a sad student to him, while the hero foreground is a mentor paying a student to learn. Section 0B point 11 updated. Skill v2 file: media-generation-skill-pay-to-learn-bootcamp-v2-0-15ca835f-a082-4fe6-8413-fc344f2c7fc5.webp.
+- 1.9 — 2026-11-08 — Illustration style only added. Written after the user said "you're leaving the animation era please follow spec properly". The English v4 had broken the spec: it came back as a realistic photo, not illustration, the mentor's head was cut off by the banner, and US dollars fell from a ৳ money bag. New Section 2.12 Illustration style only: Mode B is illustration/animation only, thick black outlines, graded colours, never a realistic photo unless the user explicitly asks for a photo; a figure's head must be fully visible below the banner, feet fully visible, and money is one currency only. English v5 illustration file: media-generation-skill-pay-to-learn-bootcamp-v5-0-f0b96926-c7ce-4719-8d5f-748a0b9584b2.webp.
