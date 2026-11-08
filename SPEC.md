@@ -1,6 +1,6 @@
 # Post Image / Infographic Coloring Spec
 
-Version: 1.7
+Version: 1.8
 Date: 2026-11-08
 Repo: https://github.com/NR-aisa/PosTimageInfoGrapcis
 Purpose: So any AI (or human) reading this file can create a new post image / infographic in the same coloring style, for any new idea, without guessing.
@@ -81,7 +81,10 @@ in one go, without asking for more details.
     washed-out colours, no soft lines, no blur. One main light from
     the left, soft shadow under the feet. A large pale lavender organic
     blob behind the figures, filling the middle, connecting them to
-    the background.
+    the background — OR, when the story needs context, a REAL,
+    DETAILED background instead of the blob (Section 2.11). The same
+    background is not necessary. Use any type of more realistic
+    background, if it tells the story better.
 12. **Check Section 12 before you present it.** One FAIL = NOT READY.
     Count the heads, count the hands, count the anger marks, check the
     text spelling, check the badge size, check the feet are visible.
@@ -479,6 +482,40 @@ brain attention.
    Next time, keep the badge large and bold, but move it a little
    lower, or make the figures a little higher, so their feet stay
    visible above the badge.
+
+### 2.11 Realistic background — not always the same lavender blob (added v1.8)
+
+User rule, 2026-11-08, for the skill pay-to-learn story: having the
+same background is not necessary, you can use any type of more
+realistic background.
+
+1. The lavender blob is the default for a simple joke, Mode B. It is
+   not a rule for every story. When the story needs context — a
+   classroom, an office, a desk, a shop — use a REAL, DETAILED
+   background instead, sharp and complete, not perfect bokeh, not a
+   blob.
+2. A realistic background must have 5+ identifiable objects, all in
+   focus, partially cut off at the edges, layered: a window with
+   daylight and blinds, a wooden desk with wood grain, a whiteboard
+   with colourful sticky notes, a green plant, books, a coffee cup,
+   headphones, a wall clock, other people FAR in the background,
+   distant and out of focus, backs to the camera, never facing the
+   camera, no background faces.
+3. The foreground hero must still be large, filling the frame, with
+   the same proportions, hands, faces, and colours as Sections 2.6–2.9.
+   The background must not fight the hero: keep it in muted tones,
+   keep the hero colours vivid, keep the banner on top.
+4. Use the background to tell the contrast in the story. Example,
+   skill v2: a small poster on the wall in the background, far away,
+   showing a fake influencer with a megaphone selling a dream course,
+   with a big red X over his "COURSE" sign, and money flowing FROM a
+   sad student TO him. The hero scene in the foreground is the
+   opposite: a mentor paying a student to learn. That contrast is
+   the story, at a glance, from far.
+5. Do not use a realistic background for a simple one-joke Mode B
+   poster, like the wife course. The blob is cleaner there. Use a
+   realistic background when the story is about a place, a job, a
+   classroom, or a contrast between two worlds.
 
 ## 3. Mode A — Single-Dominant Emotional Coloring (image-63, score 9/10)
 
@@ -922,3 +959,4 @@ Each training folder has its own README with a full breakdown. Do not overwrite 
 - 1.5 — 2026-11-08 — Hands added. Written from the user's crop image-80 of v9: the hands are looking unreal. The wife's left hand is a flat open palm facing the camera, fingers splayed like a starfish, all almost the same length, thin sticks tapering to a point, thumb short and detached at 90 degrees, no knuckles, no joints, no nails, no shading, wrist too thin, hand floating in the air with no job. New Section 2.9 Hands: never a flat open palm facing the camera, hands in profile / side view, one hand one job with a contact point, fingers short and thick in a curve, knuckles and nails on every finger, thumb at 45 degrees with a muscle, wrist thick, skin graded, exactly 5 fingers, exactly 2 hands per person, if a hand cannot be drawn in that pose change the pose. Section 0A point 12 and Sections 11 and 12 updated. No training image added in v1.5; image-80 is a crop of v9, a generation, not a training essential.
 - 1.6 — 2026-11-08 — Closed fist and bold badge added. Written from the user's crop image-82 of v12: make the hand totally closed, like boxing, if you are having a problem with fingers, and make the course size bold so it captures brain attention. New Section 2.9 point 7 (closed boxing fist on the hip) and new Section 2.10 Price badge: large bold pill, about 18–25% of the image width, very bold black text, thick outline, white background, below the feet, centre, not the same colour as the shirt, with the trade-off noted — in v13 the badge is bold but covers the wife's front foot and the husband's left sneaker, so next time keep it large and bold but move it lower so feet stay visible. Section 0A points 12–13 updated. No training image added in v1.6; image-82 is a crop of v12, a generation, not a training essential.
 - 1.7 — 2026-11-08 — Story to image in one go added. Written after the user approved v13: "this image is ok", and asked to save that image and update the spec so that when he just gives a story, a perfect image like that can be created in one go. New Section 0B Story to image in one go, 13 steps: read the story and find the joke, name the mode first, pick the hero colour from the emotion, pick different cloths, pick different poses not mirrored, tall adults 6–7 heads, 3/4 face, hands in profile or totally closed like a boxing fist, text exact in order with a large bold price badge, one anger mark only, quality/contrast/colour very carefully, check Section 12, save the approved image in final-examples/ with a README and push. Final example saved: final-examples/wife-winning-course-128-taka-v13/, PNG 1984×1280, sha256 d82e471992cd8843dfc79edd7003d533f6ead9528271d3fa26bf3786603ad938.
+- 1.8 — 2026-11-08 — Realistic background added. Written after the user said the first skill image was not correct, need more detailing and perfection, think more deep, take time, read the spec, having the same background is not necessary, you can use any type of more realistic background. New Section 2.11 Realistic background: the lavender blob is the default for a simple joke, not a rule for every story; when the story needs context use a real detailed background with 5+ identifiable objects, all in focus, partially cut off, layered, other people far in the background backs to the camera, and use the background to tell the contrast — in skill v2 a small poster on the wall shows a fake influencer with a megaphone, red X over "COURSE", money flowing from a sad student to him, while the hero foreground is a mentor paying a student to learn. Section 0B point 11 updated. Skill v2 file: media-generation-skill-pay-to-learn-bootcamp-v2-0-15ca835f-a082-4fe6-8413-fc344f2c7fc5.webp.
